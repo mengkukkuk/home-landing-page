@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>METER-PORTAL</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #1a2080;
+      background-image: url('main_bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Poppins', sans-serif;
+      padding: 24px;
+    }
+
+    .card-list {
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+      width: 100%;
+      max-width: 400px;
+    }
+
+    .card {
+      display: block;
+      background: rgba(15, 20, 80, 0.45);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(0, 210, 255, 0.3);
+      border-radius: 16px;
+      padding: 20px 24px;
+      text-decoration: none;
+      text-align: center;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      background: rgba(15, 20, 100, 0.60);
+      border-color: rgba(0, 210, 255, 0.75);
+      box-shadow: 0 8px 32px rgba(0, 180, 255, 0.25), 0 0 0 1px rgba(0, 210, 255, 0.2);
+    }
+
+    .card:active {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 16px rgba(0, 180, 255, 0.15);
+    }
+
+    .card-label {
+      display: block;
+      background: linear-gradient(135deg, #00d2ff 0%, #3a7bd5 100%);
+      color: #ffffff;
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      padding: 14px 28px;
+      border-radius: 10px;
+      width: 100%;
+      box-shadow: 0 4px 15px rgba(0, 180, 255, 0.3);
+      transition: box-shadow 0.2s ease;
+    }
+
+    .card:hover .card-label {
+      box-shadow: 0 6px 24px rgba(0, 210, 255, 0.5);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card-list">
+
+    <a class="card" href="https://unpreventively-inconvertible-rolande.ngrok-free.dev/" target="_blank" rel="noopener">
+      <span class="card-label">MWL Timesheet</span>
+    </a>
+
+    <a class="card" href="https://www.github.com" target="_blank" rel="noopener">
+      <span class="card-label">MML Portal</span>
+    </a>
+
+    <a class="card" href="https://www.wikipedia.org" target="_blank" rel="noopener">
+      <span class="card-label">Project Tracking</span>
+    </a>
+
+  </div>
+
+</body>
+</html>
